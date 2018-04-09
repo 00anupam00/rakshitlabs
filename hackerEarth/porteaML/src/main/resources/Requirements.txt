@@ -1,0 +1,70 @@
+Prediction and Classification of patients by Lifetime Revenue potential
+
+Portea is a home health care service with pan India presence. Physiotherapy is the flagship homecare service provided by Portea and an important acquisition tool as it covers a very wide range of patients by demographic and medical profile.
+An outline of the Portea service delivery process across touchpoints is shared below.
+Physiotherapy patients are acquired through hospitals, corporate organizations, clinics, or through the website, camps, referrals etc.
+Appointments are booked at published rates for each city and information on the patient demographics, address etc. is sourced.
+Patients are assigned to a clinician is assigned to serve the patient and are given the option to reschedule appointments or opt for another clinician too.
+After an assessment visit, the patient case file is prepared with the medical history w.r.t ailments, diagnosis, recommended visits and a treatment plan decided. Subsequent visits are deemed regular visits.
+We have tagged patients based on their ailments & diseases as per ICD codes (International classification of Diseases)
+The total number of visits (LOS) received by the patient is a measure of the treatment compliance Vis a Vis recommended visits. The more critical the patient’s condition is, longer is the treatment plan and hence LOS
+A patient may be deemed basic, short term, mid-term or long term based on case file and visits recommended.
+Patients that opt to discontinue treatment are offered a discount or converted to a ‘clinic patient’. Executives of the customer engagement team contact patients that decline the recommended visits to spare no effort and the patient complete the treatment.
+Customer satisfaction (CSAT – across multiple touchpoints on a scale of 1-5) and net promoter score (NPS- across customer life cycle touchpoints on a scale of 1-10) in terms of customer lifetime value are tracked across the customer life cycle.
+
+Business problem
+Participants/teams are required to classify physiotherapy patients by lifetime revenue potential by analysing drivers of revenue such as periodic return, continuity of service etc. One of the sub problems to this challenge will be to identify drivers of continuity and repeat customers.
+
+Customer Buckets
+Range, in INR
+
+A (Low)	0 – 1000
+B (Med)	1001 > 5000
+C (High-Med)	5001 > 10000
+D (High)	 >10001
+
+
+Some background information on physiotherapy patients to understand the revenue drivers and patient behaviors and spends better. Revenue from a physiotherapy patient is driven by multiple factors. There is no simple way to predict the patient behavior. Patients may choose to discontinue service for multiple reasons (including treatment completion, expiry, Economic issues) while happy or chronic customers may voluntarily opt again for further treatment.
+
+Periodic Return and continuity of service drives LTR. Economic considerations affect patient behaviour at a city level.
+
+One of the major issues affecting continuity is assigning a clinician to a patient on their acquisition. The demand vs supply follows an erratic pattern, owing to more demand-less capacity, and less demand-more capacity across various geography zones within a city. Appointments gets cancelled due to unavailability of clinicians thereby leading to bad customer experience
+
+Additionally, the timing of the visit required by the customer and availability of a clinician at that time, makes it even more difficult. It is necessary to identify temporal variations in capacity, bookings and clinician availability at any instance to ensure optimum service levels
+
+This problem is further amplified by the need of continuity or repeated visits, by the same clinician assigned to the same customer.
+
+KYC is at two levels – increased reach due to contact details, and medical conditions.
+
+The purpose of this exercise is to identify significant drivers of customer LTR. One of the sub problems to this will be to identify drivers of continuity and repeat
+
+Potential factors that influence physiotherapy revenues include KYC (demographics + Contact +address), Diagnosis, Channel of acquisition, Cities and clinician zones, Localized demand (indicator is bookings in the zone), Capacity in a zone at any instant, Cancellations and reschedules, Price (pre-assessment and post assessment), Clinician assignment trend and clinician attrition, Recommended visits, Cross sell and Seasonality variations.
+
+The physiotherapist or clinician is for all intents a ‘Heath Manager’ and ensures other health care needs are addressed too. Upon successful completion of treatment, the CE team explores cross sell and re-engagement with the patients and identify opportunities to re-engage with services like Lab tests, Doctor Appointment, Equipment, Pharmacy and geriatric care for the aged.
+
+
+
+Evaluation
+Classify customer’s basis lifetime revenue into buckets. Evaluation will be on Accuracy Score.
+
+The metrics explained
+
+LTR is Life time revenue: LOS (No of visits) * RPV
+LOS is Length of stay: Number of successful visits taken by patient over life time
+RPV is Revenue per visit: Total revenue from a patient/number of visits taken
+ARPU (Average revenue per user): Total revenue/number of active patients (Patients with at least 1 visit in the period under consideration)
+Leads: Enquiries from all channels viz. Digital, B2B, Camp, Clinic, Organic
+Channels: Acquisition platforms viz. Digital, B2B, Camp, Clinic, Organic
+Tickets: Tickets generated for each patient interaction (Lead: Tickets – 1: n)
+Bookings: New Appointment and patient id creation
+Reschedules: Change of appointment slot based on patient & clinician constraints
+FV: First visit or booking/appointment/Assessment visit
+Cancellations: Appointments not fulfilled may be due to internal and external reasons
+FV cancellation: First visit cancellation can occur due to paucity of capacity, the patient having a change of mind, other issues at the zone level
+Assessment visit: First visit by Portea team to prepare the patient case file
+Regular visit: Subsequent visits to the patient after the assessment visit
+Case file: This file will have patient diagnosis diseases, recommended visits prescribed for the treatment and suggested treatment plan
+LT, MT, ST: Midterm, long term, short term patient classifications are based on medical conditions
+Compliance: Actual visits/recommended visits
+Retention: Retaining new patients from dropping out
+Re-engagement: Re-activating, re-engaging old patients via condition based cross sell, Elder care treatment pattern plans, Loyalty card, Discounted prices, Referral rewards, Prospecting for new leads.
