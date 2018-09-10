@@ -1,20 +1,17 @@
 package com.feature.example.featureSelection;
 
+import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
-import javax.annotation.PostConstruct;
 
 public class ChiSquareTest {
 
     SparkSession spark;
 
-    @PostConstruct
-    private void init(){
+    public Dataset<Row> loadDataset(String path){
         this.spark=  SparkCluster.getInstance();
-    }
-
-
-    public void loadDataset(String path){
-        spark.read().load(path).show(20);
+        System.out.println(spark.conf().contains("delimiter"));
+        return spark.read().option("header","true").csv(path);
     }
 }
